@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+	<head>
+		<title>Activities|Kishan's Webpage</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+	</head>
+	<body>	
+		<h1 id="header">
+			Activities
+		</h1>
+		<table id="sub_header">
+			<th><a href="index.html">Home</a></th>
+			<th><a href="projects.html">Projects</a></th>
+			<th><a href="activities.html">Activities</a></th>
+		</table>
+		
+		<h2>Lab Tutor</h2>
+		<p>I was a tutor for the introductory computer science class (ICS 31) during the winter quarter of 2015 (January to March). I worked three days a week (2 hours each day) for ten weeks, and I helped about 5-8 students a session.  The students were learning python, and most of them were in other majors and took this class and a g-ed. Since these students never programmed before, 
+			I had to clearly explain technical concepts to them (primitive data types, operators, etc) and really motivate them. 
+			It was a fun experience, and I may do it again.</p>
+		
+		<h2>Cross Country</h2>
+		<p>I have been running for three years. I ran for the team in high school. I was in varsity my junior and senior year, 
+			though I was just decent. My best 5k time was 17:38, and my best mile time is 4:58. There are a lot of athletes 
+			that are faster than that. Now, I am trying out other activities, like swimming and weight lifting. I still run, 
+			but not as often as I did in high school. If I decide to join the running club, then I may start training for races again.</p>
+		<img id="runner" onclick=run src="http://images.clipartpanda.com/runner-clipart-run-hi.png" height = "200px" width = "120px/">
+		
+	
+	<p id="light_bulb">Click the light bulb.</p>
+	<img id="myImage" onclick="changeImage()" src="http://www.clker.com/cliparts/R/b/I/7/2/u/light-bulb-off-hi.png" width="100" height="180">
+	<script>
+	function changeImage() {
+		var text;
+	    var image = document.getElementById('myImage');
+		document.getElementById('light_bulb').style.color = "red";
+	    if (image.src.match("light-bulb-on")) {
+	        image.src = "http://www.clker.com/cliparts/R/b/I/7/2/u/light-bulb-off-hi.png";
+			text = "Light bulb off!";
+	    } else {
+	        image.src = "http://www.clker.com/cliparts/O/Y/B/C/t/1/light-bulb-on-md.png";
+			text = "Light bulb on!";
+	    }
+		document.getElementById('light_bulb').innerHTML = text;
+	}
+	</script>
+	<script>
+		function hoverOn(){
+			document.getElementById('myImage').border = 5;
+			document.getElementById('myImage').style.borderColor = 'blue';
+		}
+	</script>
+	<script>
+		function hoverOff(){
+			document.getElementById('myImage').border = 0;
+		}
+	</script>
+	
