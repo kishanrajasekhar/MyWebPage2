@@ -1,10 +1,12 @@
 body {
-	
+	background-color:#dae0e6;
 }
 
 #header{
 	height: 25px;
-	width:100%;
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
 	border:2px;
 	border-style:solid;
 	border-color:#6E6E6E;
@@ -16,16 +18,18 @@ body {
 
 #sub_header{
 	height: 25px;
-	width:100%;
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
 	border:2px;
 	border-style:solid;
 	border-color:#6E6E6E;
 	background-color:red;
 	padding: 5px;
-	text-align:center;
 	border-width:thin;
 	color:black;
 	font-size: 23px;
+	text-align:center;
 }
 
 a{
@@ -43,6 +47,18 @@ th{
 	border-color:#650101;
 }
 
+p{
+	font-size: 1.5em;
+}
 
+p.SectionTitles{
+	font-size: 2em;
+	color:rgb(72,72,72);
+}
 
+.centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
