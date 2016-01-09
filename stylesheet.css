@@ -1,12 +1,11 @@
 body {
 	background-color:#dae0e6;
+	margin-right: 5%;
+   	margin-left: 5%;
 }
 
 #header{
 	height: 25px;
-	width:90%;
-	margin-left:5%;
-	margin-right:5%;
 	border:2px;
 	border-style:solid;
 	border-color:#6E6E6E;
