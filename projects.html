@@ -1,16 +1,25 @@
 <!DOCTYPE html>
 	<head>
 		<title>Projects|Kishan's Webpage</title>
-		<link rel="stylesheet" type="text/css" href="stylesheet.css"></link>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		
+		<!--CSS for Google Map elements on webpage-->
+		<link rel="stylesheet" type="text/css" href="gmap_style.css">
+		<!--API key for google map-->
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAyatX8lVABgjHpKi2Q9bNAn3LlMQZqiNE"></script>
+		<!--JQuery for only one line of code for google map :P-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!--Google map javascript file-->
+		<script src="g_map_script.js"></script>
 	</head>
 	<body>
 		<h1 id="header">
 			Projects
 		</h1>
 		<table id="sub_header">
-			<th><a href="index.html">Home</a></th>
-			<th><a href="projects.html">Projects</a></th>
-			<th><a href="activities.html">Activities</a></th>
+			<th width="33%"><a href="index.html">Home</a></th>
+			<th width="33%"><a href="projects.html">Projects</a></th>
+			<th width="33%"><a href="activities.html">Activities</a></th>>
 		</table>
 		
 		<p>I made some fun projects in the courses I took at UCI, as well as some projects I made on my own. I posted them
@@ -20,8 +29,26 @@
 		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UCI_Places_To_Go">UCI: Places To Go</a> (January 2016)</p>
 		<p>Using the Google Maps API and some JavaScript, I made a simple web application in which the user clicks on
 			a location they are interested in, an the map pans to that location. If the user presses "enter", the map
-			shows the directions to that location from the UCI campus. Click the icon to access the web app.</p>
-		<a href="http://kishanrajasekhar.github.io/UCI_Places_To_Go/"><img src="https://lh3.googleusercontent.com/MOf9Kxxkj7GvyZlTZOnUzuYv0JAweEhlxJX6gslQvbvlhLK5_bSTK6duxY2xfbBsj43H=w300"></a>
+			shows the directions to that location from the UCI campus.</p>
+		
+		<h1 id="title">Get Off Campus!!!</h1>
+		<aside id="sidebar">
+    		<h2 style="text-align:center;color:#0000FF;">Places</h2>
+	    	<input class="choice" type="button" onclick="panMap(33.6454,-117.8426, 'Aldrich Park')" value="UCI" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"><br>
+		    <input class="choice" type="button" onclick="panMap(33.689800, -117.836138, 'Alton Pkwy, Irvine, CA 92606')" value="Diamond Jamboree" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()"><br>
+		    <input class="choice" type="button" onclick="panMap(33.616489, -117.875608, '401 Newport Center Dr')" value="Fashion Island" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+			<input class="choice" type="button" onclick="panMap(33.651259, -117.743504, 'Irvine Spectrum')" value="Irvine Spectrum" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+			<input class="choice" type="button" onclick="panMap(33.606883, -117.926118, 'W Balboa Blvd')" value="Newport Beach" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+			<input class="choice" type="button" onclick="panMap(33.812961, -117.919041, 'Disney Land, CA')" value="Disney Land" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">	
+	    </aside>
+		<input id="searchBox" type="text" placeholder="Search Box" onkeydown="if (event.keyCode == 13) document.getElementById('btnSearch').click()">
+		<input id="btnSearch" type="button" onclick="searchBoxRoute()" value="Enter">
+		<div id="right-panel">
+			<h2 style="text-align:center;color:#0000FF;">Directions</h2>
+		</div>
+		<div id="googleMap"></div>
+		<input id="directions" type="button" onclick="makeRoute(new google.maps.LatLng(destination_lat,destination_lng))" value="Directions">
+	
 		
 		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UFO-Ambush">UFO-Ambush</a> (June 2015)</p>
 		<p>This is a simple 2D shooting game that I made using Python. The code was originally used 
@@ -42,4 +69,6 @@
 		<img src="images/othello1.GIF" width="364" height="434">
 		<img src="images/game_over.GIF" width="364" height="434">
 		<img src="images/othello_options.GIF">
+		
+		
 	</body>
