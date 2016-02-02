@@ -1,5 +1,7 @@
-body {
+html, body {
 	background-color:#dae0e6;
+	height: 100%;
+	/*Overall margins for the webpage*/
 	margin-right: 5%;
    	margin-left: 5%;
 }
