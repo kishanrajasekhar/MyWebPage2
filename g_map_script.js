@@ -36,8 +36,9 @@ function initialize()
 	directionsDisplay.setPanel(document.getElementById('right-panel'));
 	document.getElementById("directions").disabled = true;  
 	makeRoute("Aldrich Park, Irvine"); 
-	//for some reason, deleting the directions button at bottom
-	//makes everything stop working. So I'm just going to hide it
+	
+	//Just hiding the button since I ended up not needing it
+	//DAT one line of JQuery though...
 	$("#directions").hide();
 }
 
