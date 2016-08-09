@@ -13,18 +13,29 @@
 		<script src="g_map_script.js"></script>
 	</head>
 	<body>
+
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+				
 		<a name="top"><h1 id="header">Projects</h1></a>
 		<table id="sub_header">
-			<th width="33%"><a href="index.html">Home</a></th>
-			<th width="33%"><a href="projects.html">Projects</a></th>
-			<th width="33%"><a href="activities.html">Activities</a></th>>
+			<th width="25%"><a href="index.html">Home</a></th>
+			<th width="25%"><a href="projects.html">Projects</a></th>
+			<th width="25%"><a href="experience.html">Experience</a></th>
+			<th width="25%"><a href="activities.html">Activities</a></th>>
 		</table>
 		
 		<p>I made some fun projects in the courses I took at UCI, as well as some projects I made on my own. I posted them
 		on GitHub. <br>
 		<a href = "https://github.com/kishanrajasekhar"><b><u>Click here</u></b></a> to access my account:</p>
 		
-		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/AutismAppJam2016">What I Learned</a> (April 2016)</p>
+		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/AutismAppJam2016" target="_blank">What I Learned</a> (April 2016)</p>
 		<p>My team and I participated in an app jam. The theme was autism, so we had to design an app to help autistic users. We decided
 			to create a journaling app which helps its users learn from social situations. I was the back-end developer
 			for this project. Click the link below to use the app.</p>
@@ -34,7 +45,7 @@
 		<img src="images/recordedEntry.PNG" width="292" height="412">	
 	
 	
-		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UCI_Places_To_Go">UCI: Places To Go</a> (January 2016)</p>
+		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UCI_Places_To_Go" target="_blank">UCI: Places To Go</a> (January 2016)</p>
 		<p>Using the Google Maps API and some JavaScript, I made a simple web application in which the user clicks on
 			a location they are interested in, an the map pans to that location. If the user presses "enter", the map
 			shows the directions to that location from the UCI campus.</p>
@@ -58,7 +69,7 @@
 		<input id="directions" type="button" onclick="makeRoute(new google.maps.LatLng(destination_lat,destination_lng))" value="Directions">
 	
 		
-		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UFO-Ambush">UFO-Ambush</a> (June 2015)</p>
+		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/UFO-Ambush" target="_blank">UFO-Ambush</a> (June 2015)</p>
 		<p>This is a simple 2D shooting game that I made using Python. The code was originally used 
 			for an assignment for one of my classes to make an animated simulation. After I finished that assignment, 
 			I adapted the code to make my game.</p>
@@ -68,7 +79,7 @@
 			<p>The original project that I adapted the code from was a simulation.</p>
 			<img src="images/hw5_simulation.GIF" width="436" height="292">
 			
-		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/Othello">Ohtello</a> (March 2015)</p>
+		<p class="SectionTitles"><a href="https://github.com/kishanrajasekhar/Othello" target="_blank">Ohtello</a> (March 2015)</p>
 		<p>This was the final project for my ICS 32 class, and I built the program from scratch using python(the professor showed us 
 			similar examples during his lectures to help us). I first had to implement the game logic before I could start with the graphics. 
 			To do that, I used a 2D array to represent the board, with each element representing a piece or an empty space. I also had to 
@@ -77,6 +88,7 @@
 		<img src="images/othello1.GIF" width="364" height="434">
 		<img src="images/game_over.GIF" width="364" height="434">
 		<img src="images/othello_options.GIF">
-		
+		</br></br></br>
+		<div class="fb-comments" data-href="http://kishanrajasekhar.github.io/MyWebPage2/projects.html" data-width="1000" data-numposts="5"></div>
 		<a href="#top"><h3 style="text-align:center;">Return to top of page</h3></a>
 	</body>
