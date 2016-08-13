@@ -63,3 +63,11 @@ p.SectionTitles{
     margin-right: auto;
 }
 
+.arrow{
+	font-size: 8em;
+	padding-right: 1em;
+}
+
+.arrow:hover{
+	cursor: pointer;
+}
