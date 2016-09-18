@@ -9,5 +9,8 @@ An introduction about me (Where I'm from, what I learned, etc).
 ##Projects
 All the programs I wrote and the links to the source code on GitHub.
 
+##Experience
+My internships and work experience.
+
 ##Activities
 The activities I have been involved in.
